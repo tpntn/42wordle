@@ -1,0 +1,2 @@
+# replace digits with line break
+sed -E 's/([[:digit:]])/|/g' words.txt | tr '|' '\n'  > output.txt
